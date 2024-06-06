@@ -9,6 +9,9 @@ This project is a clone of the Facebook login page, created for educational purp
 - **Log In and Create New Account buttons:** Users can choose to log in with their existing account or create a new one.
 - **Forgot Password link:** Provides users with an option to recover their password if forgotten.
 
+## Live Demo
+The site is live at https://3asfuur.github.io/fb_login_clone
+
 ## Screenshots
 
 ![image](https://github.com/3asfuur/fb_login_clone/assets/68702059/e1a15287-87b1-4f12-8264-042b7faff8f8)
