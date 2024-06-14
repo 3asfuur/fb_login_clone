@@ -6,6 +6,7 @@ body {
   background-size: cover;
   box-sizing: border-box;
   line-height: 1.34;
+  overflow: hidden;
 }
 
 .container {
@@ -29,46 +30,28 @@ body {
   margin-left: -28px;
 }
 
+.container .title-box img:last-of-type {
+  display: none;
+}
+
 .container .title-box>p {
   font-size: 28px;
   font-weight: normal;
   color: #1c1e21;
 }
 
+/* Form Box Section Start */
+
 .container .form-box {
   background: #fff;
-  box-shadow: #f0f0f0;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 17px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-left: 131px;
   text-align: center;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  width: 380px;
   position: relative;
 }
-
-/* .container .form-box::before {
-  content: "Create a Page";
-  font-weight: bold;
-  position: absolute;
-  bottom: -50px;
-  left: 20px;
-  
-
-}
-
-.container .form-box::after {
-  content: "for a celebrity, brand or business.";
-  position: absolute;
-  bottom: -50px;
-  left: 50px;
-  width: 100%;
-  font-weight: normal;
-} */
 
 .container .form-box:last-child p {
   position: absolute;
@@ -85,23 +68,19 @@ body {
 
 .container .form-box input {
   display: block;
-  padding: 15px 16px;
+  padding: 15px 5px;
   font-size: 17px;
   margin-bottom: 12.5px;
   border: 1px solid #dddfe2;
-  width: 90%;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+  width: 97%;
+  margin: 0 0 10px auto;
+  border-radius: 8px;
 }
 
 .container .form-box input:focus {
   border: 1px solid #0866ff;
   outline: none;
   box-shadow: 0 0 0 2px #e7f3ff;
-  /* box-shadow: 0px 0px 1px 1px rgb(22, 111, 229); */
 }
 
 .container .form-box input::placeholder {
@@ -119,8 +98,8 @@ body {
   font-size: 20px;
   border-radius: 6px;
   line-height: 48px;
-  padding: 0 px;
-  width: 366px;
+  padding: 0 16px;
+  width: 100%;
   display: block;
   margin-top: 16px;
   font-weight: bold;
@@ -138,6 +117,9 @@ body {
   margin: 16px 0 20px;
   display: inline-block;
   color: #0866ff;
+  border-bottom: 1px solid #dadde1;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 .container .form-box .forget-pass-link:hover {
@@ -148,63 +130,162 @@ body {
   color: #0866ff;
 }
 
-.container .form-box .line {
-  border-bottom: 1px solid #dadde1;
-}
-
 .container .form-box .create-btn {
   background: #42b72a;
   color: #fff;
   border: none;
   line-height: 48px;
   padding: 0 16px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 17px;
   font-weight: bold;
-  margin: 25.6px 0 7px;
+  margin: 5px;
   cursor: pointer;
+
 }
 
 .container .form-box .create-btn:hover {
   background: #36a420;
 }
 
-@media (max-width: 950px) {
+.container .form-box .meta-div img,
+.container .form-box .meta-div span {
+  display: none;
+  color: #211c1c;
+  
+}
+.container .form-box .meta-div img {
+  height: 14px;
+}
+
+/* Form Box Section End */
+
+/* Media Queries Section Start */
+@media (width <=1200px) {
   .container {
     max-width: 850px;
+    display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 90vw !important;
-    margin-top: 30px !important;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 92vw !important;
+    font-size: 30px;
   }
 
   .container .title-box {
     width: 95%;
     margin: 0 auto;
     text-align: center;
-    
-    
-  }
-
-
-  .container .title-box img {
-    height: 106px;
-    margin-bottom: 0;
   }
 
   .container .title-box p {
-    font-size: 24px;
-    margin-top: 0 !important;
+    display: none;
+  }
+
+  .container .title-box img {
+    height: 200px;
+    margin-bottom: 0;
   }
 
   .container .form-box {
     margin: 0;
+    width: 80%;
+  }
+
+
+  @media (width <=992px) {
+    .container {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .container .title-box {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .container .title-box p,
+  img:first-child {
+    display: none;
+  }
+
+  .container .title-box img:last-of-type {
+    height: 80px;
+    margin-bottom: 50px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+
+
+  .container .form-box {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .container .form-box .login-btn {
+    border-radius: 80px;
+    font-weight: 500;
+    width: 99%;
+    transition: transform 0.2s;
+    margin: 15px 0 0 auto;
+  }
+
+  .container .form-box .login-btn:active {
+    transform: scale(0.99);
+  }
+
+  .container .form-box .forget-pass-link {
+    color: #1c1e21;
+    border-bottom: none;
+  }
+  .container .form-box .forget-pass-link:hover {
+    text-decoration: none;
+  }
+  .container .form-box .forget-pass-link:visited {
+    color: #1c1e21;
+  }
+
+  .container .form-box .create-btn {
+    background: #f0f2f5;
+    color: #000;
+    border: 0.1px solid #211c1c66;
+    margin-top: 100px;
+    border-radius: 80px;
+    width: 100%;
+    height: 37px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: transform 0.2s;
+  }
+
+  .container .form-box .create-btn:hover {
+    background: transparent;
+    border: 1px solid #211c1c;
+  }
+
+  .container .form-box .create-btn:active {
+    transform: scale(0.99);
+
+  }
+
+  .container .form-box:last-child p {
+    display: none;
+  }
+
+  .container .form-box .meta-div img,
+  .container .form-box .meta-div span {
+    display: inline-block;
+    font-size: 17px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 95vw;
-    margin: 20px auto;
-  }
-}
+/* Media Queries Section End */
