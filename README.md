@@ -15,5 +15,5 @@ The site is live at https://3asfuur.github.io/fb_login_clone
 ## Screenshots
 
 ![image](https://github.com/3asfuur/fb_login_clone/assets/68702059/e1a15287-87b1-4f12-8264-042b7faff8f8)
-
+![phone 2](https://github.com/3asfuur/fb_login_clone/assets/68702059/fa46e5d8-66a3-4447-8a2a-2b612d7f0bf3)
 ![image](https://github.com/3asfuur/fb_login_clone/assets/68702059/c8d6ffb2-0785-42a4-8c00-063065c849a9) 
